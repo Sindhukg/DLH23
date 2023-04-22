@@ -1,5 +1,5 @@
 # HiCu-ICD
-This repo contains code for DLH2023 HiCu: Leveraging Hierarchy for Curriculum Learning in
+This repo contains code for DLH2023 paper HiCu: Leveraging Hierarchy for Curriculum Learning in
 Automated ICD Coding.
 
 Setup
