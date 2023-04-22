@@ -1,8 +1,27 @@
-Our data preprocessing follows [MultiResCNN](https://github.com/foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network) and [CAML](https://github.com/jamesmullenbach/caml-mimic) with slight modifications. To set up the dataset, follow the instructions below:
+# HiCu-ICD
+This repo contains code for our project for DLH2023 [HiCu: Leveraging Hierarchy for Curriculum Learning in
+Automated ICD Coding] https://static1.squarespace.com/static/59d5ac1780bd5ef9c396eda6/t/62e975f3f2d3614634ef3d99/1659467253752/37+ICD_Coding___MLHC2022.pdf
 
-1. Download MIMIC-III dataset from [PhysioNet](https://physionet.org/content/mimiciii/1.4/).
+Setup
+-----
+Install the following packages to run the code in this repository:
+* gensim==4.1.2
+* nltk==3.5
+* numpy==1.18.1
+* pandas==1.0.0
+* scikit_learn==1.1.1
+* scipy==1.4.1
+* torch==1.7.1
+* tqdm==4.62.3
+* transformers==4.5.1
 
-2. Place the MIMIC-III files into `/data` as shown below:
+```bash
+pip install -r requirements.txt
+```
+
+Data Preprocessing
+-----
+We use MIMIC-III for model training and evaluation. We use the same data preprocessing code as [MultiResCNN](https://github.com/foxlf823/Multi-Filter-Residual-Convolutional-Neural-Network). To set up the dataset, place the MIMIC-III files into `/data` as shown below:
 ```
 data
 |   D_ICD_DIAGNOSES.csv
@@ -18,6 +37,13 @@ data
 |   |   test_full_hadm_ids.csv
 |   |   test_50_hadm_ids.csv
 ```
-The `*_hadm_ids.csv` files can be found in the [CAML repository](https://github.com/jamesmullenbach/caml-mimic)
+The `*_hadm_ids.csv` files can be found [here](https://github.com/jamesmullenbach/caml-mimic/tree/master/mimicdata/mimic3).
 
-3. Run ```python preprocess_mimic3.py``` to preprocess the data.
+After setting up the files, run the following command to preprocess the data:
+```sh
+python preprocess_mimic3.py
+```
+
+Acknowledgement
+-----
+A large portion of the code in this repository is borrowed from https://github.com/wren93/HiCu-ICD. 
