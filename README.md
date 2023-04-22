@@ -1,6 +1,6 @@
 # HiCu-ICD
 This repo contains code for our project for DLH2023 [HiCu: Leveraging Hierarchy for Curriculum Learning in
-Automated ICD Coding] https://static1.squarespace.com/static/59d5ac1780bd5ef9c396eda6/t/62e975f3f2d3614634ef3d99/1659467253752/37+ICD_Coding___MLHC2022.pdf
+Automated ICD Coding] (https://static1.squarespace.com/static/59d5ac1780bd5ef9c396eda6/t/62e975f3f2d3614634ef3d99/1659467253752/37+ICD_Coding___MLHC2022.pdf)
 
 Setup
 -----
